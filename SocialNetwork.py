@@ -47,7 +47,7 @@ if __name__ == "__main__":
     }
 
     # Test case 3: A social network with two users that are friends of each other - to test the easiest case possible;
-    print("3: The length of the shortest chain of friends is:", shortest_chain_length(network2, "Andrei", "Bogdan"))
+    print("Case 3: The length of the shortest chain of friends is:", shortest_chain_length(network2, "Andrei", "Bogdan"))
 
 
     network3 = {
@@ -58,7 +58,7 @@ if __name__ == "__main__":
     }
 
     # Test case 4: A social network with two users A and B that have multiple chains of friends inbetween each other - to make sure that the function will return the length of the shortest chain;
-    print("4: The length of the shortest chain of friends is:", shortest_chain_length(network3, "Andrei", "Daniel"))
+    print("Case 4: The length of the shortest chain of friends is:", shortest_chain_length(network3, "Andrei", "Daniel"))
 
 
     network4 = {
@@ -69,7 +69,7 @@ if __name__ == "__main__":
     }
 
     # Test case 5: A social network that contains certain users that ultimately aren't friends with each other - to assure that the function is able to distinguish certain cases that do not have solutions;
-    print("5: The length of the shortest chain of friends is:", shortest_chain_length(network4, "Andrei", "Daniel"))
+    print("Case 5: The length of the shortest chain of friends is:", shortest_chain_length(network4, "Andrei", "Daniel"))
 
 
     network5 = {
@@ -83,5 +83,5 @@ if __name__ == "__main__":
     }
 
     # Test case 6: A vast social network that also includes some of the cases discussed previously - to ensure that the function is behaving properly; here I also tested if a function call that started the search from user A and ended with user B produced the same result as a function call that started the search from user B and ended with user A.
-    print("6: The length of the shortest chain of friends is:", shortest_chain_length(network5, "Andrei", "Georgiana"))
-    print("6(reverse): The length of the shortest chain of friends is:", shortest_chain_length(network5, "Georgiana", "Andrei"))
+    print("Case 6: The length of the shortest chain of friends is:", shortest_chain_length(network5, "Andrei", "Georgiana"))
+    print("Case 6(reverse): The length of the shortest chain of friends is:", shortest_chain_length(network5, "Georgiana", "Andrei"))
