@@ -57,7 +57,7 @@ if __name__ == "__main__":
         "Daniel": {"Bogdan", "Cristian"}
     }
 
-    # Test case 4: A social network with two users A and B that have multiple chains of friends inbetween each other - to make sure that the function will return the length of the shortest chain;
+    # Test case 4: A social network with two users A and B that have multiple chains of friends in between each other - to make sure that the function will return the length of the shortest chain;
     print("Case 4: The length of the shortest chain of friends is:", shortest_chain_length(network3, "Andrei", "Daniel"))
 
 
